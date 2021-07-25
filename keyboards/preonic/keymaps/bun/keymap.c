@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Ent/Sh|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Ctrl | Alt  | GUI  | Brite| [/Lr |    Space    | ]/Rs | Left | Down |  Up  |Right |
+ * | Ctrl | Alt  | GUI  |   \  | [/Lr |    Space    | ]/Rs | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_preonic_grid(
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
   LT(6, KC_ESC),  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, RSFT_T(KC_ENT),
-  KC_LCTL, KC_LALT, KC_LGUI, BACKLIT, LT(3, KC_LBRC),   KC_SPC,  KC_SPC,  LT(4, KC_RBRC),   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+  KC_LCTL, KC_LALT, KC_LGUI, KC_BSLS, LT(3, KC_LBRC),   KC_SPC,  KC_SPC,  LT(4, KC_RBRC),   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
 ),
 
 /* Colemak
@@ -172,7 +172,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |      | Reset|      |      |      |      |      |Mac2Rc|MacStp|Mac2Pl|      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |Mac1Rc|MacStp|Mac1Pl|      |      |
+ * |      |      |      |      |      |      |      |Mac1Rc|MacStp|Mac1Pl|   \  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |SC_Mc | SC_M | SC_Ch|Brite |      |             |      | Home | PgDn | PgUp | End  |
  * `-----------------------------------------------------------------------------------'
@@ -181,7 +181,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_DEL,
   _______, KC_F11,  KC_F12,  _______, _______, _______, _______, _______, _______, _______, _______, KC_DEL,
   _______, RESET,   _______, _______, _______, _______, _______, DM_REC2, DM_RSTP, DM_PLY2, _______, _______,
-  _______, _______, _______, _______, _______, _______, _______, DM_REC1, DM_RSTP, DM_PLY1, _______, _______,
+  _______, _______, _______, _______, _______, _______, _______, DM_REC1, DM_RSTP, DM_PLY1, KC_BSLS, _______,
   LCTL(LSG(KC_4)), RCS(KC_F5), LSG(KC_4), BACKLIT, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END
 )
 
