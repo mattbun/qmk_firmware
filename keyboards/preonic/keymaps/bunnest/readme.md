@@ -20,4 +20,4 @@
 
 -   Inverted T arrow keys (had to move `/` elsewhere but it's worth it)
 -   Only two layers! ESC layer accessible by holding escape
--   Contains every 60% key _except_ for `=` (and caps lock I guess but WHO USES THAT?)
+-   QWERTY layer contains every 60% key _except_ for `=` (and caps lock I guess but WHO USES THAT?)
