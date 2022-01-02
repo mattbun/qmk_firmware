@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | xxxx |      |      |RGB_MD| Sat+ | Brt+ | Hue+ |Mac2Rc|MacStp|Mac2Pl|   -  |  =   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Debug| Reset| RGB  | Sat- | Brt- | Hue- |Mac1Rc|MacStp|Mac1Pl| PgUp |      |
+ * |      | Debug| Reset| RGB  | Sat- | Brt- | Hue- |Mac1Rc|MacStp|Mac1Pl| PgUp | Ent  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |Brite | Prev |    Play     | Next |      | Home | PgDn | End  |
  * `-----------------------------------------------------------------------------------'
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_ESC] = LAYOUT_planck_grid(
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL,
     _______, _______, _______, RGB_MOD, RGB_SAI, RGB_VAI, RGB_HUI, DM_REC2, DM_RSTP, DM_PLY2, KC_MINS, KC_EQL,
-    _______, DEBUG,   RESET,   RGB_TOG, RGB_SAD, RGB_VAD, RGB_HUD, DM_REC1, DM_RSTP, DM_PLY1, KC_PGUP, _______,
+    _______, DEBUG,   RESET,   RGB_TOG, RGB_SAD, RGB_VAD, RGB_HUD, DM_REC1, DM_RSTP, DM_PLY1, KC_PGUP, KC_ENT,
     _______, _______, _______, BACKLIT, KC_MPRV, KC_MPLY, KC_MPLY, KC_MNXT, _______, KC_HOME, KC_PGDN, KC_END
 ),
 
